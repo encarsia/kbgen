@@ -6,7 +6,7 @@ Genau. Okay, du weißt nicht, was Kettlebattle ist, kein Problem. Die Menschen, 
 
 **Kettlebattle ist ein kollaboratives Kettlebell-Home-Workout ab zwei Mitspielern.**
 
-Die Frontlinie der "Battle" befindet sich dabei nicht zwischen den Mitspielern, sondern zwischen Motivation, Schweinehund, Sofa und Hanteln. Team up!
+Die Frontlinie der "Battle" verläuft dabei nicht zwischen den Mitspielern, sondern zwischen Motivation, Schweinehund, Sofa und Hanteln. Team up!
 
 ## SPIELREGELN
 
@@ -26,6 +26,7 @@ Der Kettlebattle-Generator ist eine Einseiten-Web-App, mit der sich aus einem zu
 ### Habenwill!
 
 * für die Ausführung wird [Flask](http://flask.pocoo.org) benötigt
+* Sources aus dem [GitHub-Repository](https://github.com/encarsia/kbgen) herunterladen und entpacken
 * `./kbgen.py` ausführen, dies startet den internen Flask-Server¹
 * [127.0.0.1:5000](http://127.0.0.1:5000/) aufrufen
 * Workout generieren
