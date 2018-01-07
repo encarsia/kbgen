@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kettlebattle!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="{{ url_for('home') }}"><h1 class="logo">Kettlebattle-Generator</h1></a>
+        <nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('about') }}">What is this about?</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> 
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
