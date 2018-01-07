@@ -39,11 +39,21 @@ In der `./kbgen.py` gibt es 3 Variablen für individuelle Einstellungen:
 1. **`KB_EX`**: Liste von Übungen, die bei der Kettlebattle zur Auswahl stehen sollen, ein Listeneintrag ist ein Tupel nach dem Muster (Name, Minimum bei Preset 1, Minimum bei Preset 2)
 1. **`MAX_EX`**: Maximale Anzahl (int) von Übungen, die aus der Liste durchgeführt werden sollen, Minimumwerte werden immer gezählt
 
-## Verweise
+## VERWEISE
 
 * Kettlebell-Image: [openclipart.org](https://openclipart.org/detail/241218/kettlebell)
 * Layout: [An Introduction to Python’s Flask Framework](https://code.tutsplus.com/tutorials/an-introduction-to-pythons-flask-framework--net-28822)
 * Kettlebattle ist eine Erfindung von [ZeEvilKohl](https://twitter.com/ZeEvilKohl) und [encarsia_](https://twitter.com/encarsia_) (yours truly)
+
+## IRGENDWELCHE PLÄNE FÜR SPÄTER?
+
+* Export in Textbildchen (leben wir nicht in tollen Zeiten?)
+* Favoritenliste/Liste der letzten Kettlebattles
+* Lokalisation
+
+## SCREENSHOT!
+
+![Kettlebattle!](screenshot.png)
 
 ##### (English version)
 ## KETTLE...WHAT?
