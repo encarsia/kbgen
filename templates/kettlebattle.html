@@ -21,6 +21,7 @@
     </table>
     <button class="val switch soil" type="submit" name="submit" value="generate">Generate</button>
     <div class="clearing"></div>
+    {% if showgen == True %}
     <h3>Battle!</h3>
     <div class="copypastabox">
      {% for line in battletext %}
@@ -28,6 +29,7 @@
      {% endfor %}
      <b>Total: {{ total }}</b>
     </div>
+    {% endif %}
    </form>
    </div>
 {% endblock %}

@@ -30,13 +30,12 @@ MAX_EX = 4  #max number of exercises to generate workout, minimum presets are al
 FORM_PRESET = [("{} {}".format(REPS_PRESET[0], 1), REPS_PRESET[0]),
                ("{} {}".format(REPS_PRESET[1], 2), REPS_PRESET[1])]
 
-
 def generate_workout(abs_reps, pos):
     #generate exercise list for chosen preset
     exercises = []
     for ex in KB_EX:
         exercises.append([ex[0], ex[pos]])
-    #sum up given minimum values
+    #sum up minimum values
     min_reps = 0
     for ex in exercises:
         min_reps += ex[1]
@@ -58,7 +57,11 @@ def home():
             #create workout list, render template with this list instead of KB_EX so values are kept
             workout = []
             for ex in KB_EX:
-                workout.append((ex[0], int(request.form[ex[0]])))
+                if request.form[ex[0]] == '':
+                    rep = 0
+                else:
+                    rep = int(request.form[ex[0]])
+                workout.append((ex[0], rep))
             #create list for sharing via c&p, don't list exercises w/ 0 reps
             battle = []
             total = 0
@@ -66,7 +69,7 @@ def home():
                 if ex[1] > 0:
                     battle.append((ex[0], ex[1]))
                     total += ex[1]
-            return render_template('kettlebattle.html', form=request.form, reps=FORM_PRESET, exc=workout, battletext=battle, total=total)
+            return render_template('kettlebattle.html', form=request.form, reps=FORM_PRESET, exc=workout, battletext=battle, total=total, showgen=True)
         elif request.form['submit']:
             abs_reps, pos = request.form['submit'].split()
             workout = generate_workout(int(abs_reps), int(pos))
