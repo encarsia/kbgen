@@ -1,3 +1,7 @@
+# ARCHIVED REPOSITORY
+
+The functionality is still available as a module of the [main application](https://github.com/encarsia/cave).
+
 ##### (German version)
 
 ## KETTLE...WAS?
